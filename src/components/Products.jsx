@@ -40,8 +40,8 @@ const producrs = [
 
 function Products() {
   return (
-    <div className="px-20 pb-20">
-      <Title className="py-14 text-nowrap">Popular products</Title>
+    <div className="md:px-20 py-2 md:pb-20">
+      <Title className="py-14 text-nowrap text-center md:text-left">Popular products</Title>
       <div className="flex flex-wrap justify-center items-center gap-8">
         {producrs.map((product) => (
             <div className="w-[192px]" key={product.name}>
