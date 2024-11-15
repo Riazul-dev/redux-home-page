@@ -3,6 +3,7 @@ import Container from "./Container";
 import Button from "./Button";
 import Review from "./Review";
 import Title from "./Title";
+import { NavLink } from "react-router-dom";
 
 function Hero() {
   return (
@@ -22,12 +23,15 @@ function Hero() {
           </div>
 
           <div className="inline-flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 md:w-full">
-            <Button
-              type="button"
-              className="bg-white text-[#A61473] px-4 py-2 md:px-12 md:py-5 hover:shadow-xl hover:bg-white/80 duration-300"
-            >
-              Shop Now
-            </Button>
+            <NavLink to="/allProducts">
+              <Button
+                type="button"
+                className="bg-white text-[#A61473] px-4 py-2 md:px-12 md:py-5 hover:shadow-xl hover:bg-white/80 duration-300"
+              >
+                Shop Now
+              </Button>
+            </NavLink>
+
             <Review />
           </div>
         </div>
